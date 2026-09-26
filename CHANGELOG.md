@@ -12,6 +12,17 @@ git revert <SHA>
 
 ---
 
+## [2026-09-26 13:04 UTC] — Favicon libro
+
+### Cambios
+- Añadido `favicon.svg`: icono de libro azul en la pestaña del navegador.
+- Enlazado en `index.html`.
+
+### Archivos
+- `favicon.svg` (nuevo), `index.html`, `README.md`, `CHANGELOG.md`
+
+---
+
 ## [2026-09-26 12:53 UTC] — Versión inicial
 
 ### Cambios

@@ -10,6 +10,10 @@ Notas simples con un poco de estilo.
 
 Las notas se guardan en el **navegador** (localStorage). No se suben a ningún servidor.
 
+## Favicon
+
+Icono de **libro** azul en la pestaña del navegador (`favicon.svg`).
+
 ## GitHub Pages
 
 **Settings → Pages** → branch `main` / `/ (root)`.

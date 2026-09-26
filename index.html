@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorfarnotas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Sorfarnotas</h1>
+    <p>Tus notas, simple</p>
+  </header>
+
+  <main>
+    <!-- Menu principal -->
+    <section id="menu-screen" class="screen active">
+      <div class="menu-cards">
+        <button class="menu-card" id="btn-ver-notas">
+          <span class="menu-icon">📋</span>
+          <span class="menu-label">Ver notas</span>
+        </button>
+        <button class="menu-card" id="btn-crear-nota">
+          <span class="menu-icon">✨</span>
+          <span class="menu-label">Crear nota</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Lista de notas -->
+    <section id="list-screen" class="screen">
+      <div class="top-bar">
+        <button class="btn-back" id="btn-back-list">← Volver</button>
+        <h2>Mis notas</h2>
+      </div>
+      <div id="notes-list" class="notes-list"></div>
+      <p id="empty-msg" class="empty-msg hidden">Aún no hay notas. Crea una.</p>
+    </section>
+
+    <!-- Crear / editar nota -->
+    <section id="form-screen" class="screen">
+      <div class="top-bar">
+        <button class="btn-back" id="btn-back-form">← Volver</button>
+        <h2 id="form-title">Nueva nota</h2>
+      </div>
+      <div class="form-card">
+        <input type="text" id="note-title" placeholder="Título" maxlength="80" autocomplete="off">
+        <textarea id="note-body" placeholder="Escribe tu nota..." rows="8"></textarea>
+        <button class="btn-save" id="btn-save">Guardar</button>
+      </div>
+    </section>
+
+    <!-- Ver nota -->
+    <section id="view-screen" class="screen">
+      <div class="top-bar">
+        <button class="btn-back" id="btn-back-view">← Volver</button>
+        <div class="view-actions">
+          <button class="btn-icon" id="btn-edit" title="Editar">✏️</button>
+          <button class="btn-icon btn-danger" id="btn-delete" title="Eliminar">🗑️</button>
+        </div>
+      </div>
+      <article class="view-card">
+        <h2 id="view-title"></h2>
+        <time id="view-date"></time>
+        <div id="view-body" class="view-body"></div>
+      </article>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
